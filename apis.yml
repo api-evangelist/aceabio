@@ -1,7 +1,32 @@
 aid: aceabio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aceabio.png
 name: aceabio
-description: aceabio is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'ACEA Biosciences (aceabio) is a life-sciences company known for cell-analysis
+  instrumentation that was acquired by Agilent Technologies; its aceabio.com.cn domain
+  now redirects to an Agilent landing page (explore.agilent.com/ACEA-joins-Agilent).
+  It was surfaced as a portfolio company of the Qiming venture firm and added to the
+  API Evangelist network as a stub. Enrichment found no independent developer portal,
+  API documentation, OpenAPI/AsyncAPI specification, SDKs, or public API surface for
+  the standalone entity — the operating web presence has been folded into Agilent.'
+tags:
+- Company
+- Biotechnology
+- Life Sciences
+- Cell Analysis
+- Diagnostics
+- Scientific Instruments
+- Acquired
 url: https://raw.githubusercontent.com/api-evangelist/aceabio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,8 +37,6 @@ x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
-tags:
-- Company
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aceabio-domain-security.yml
 - type: Website
   url: https://aceabio.com.cn
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
